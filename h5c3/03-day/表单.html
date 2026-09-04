@@ -7,9 +7,44 @@
   </head>
   <body>
     <form action="demo.php" method="POST" name="name1">
-      用户名：<input type="text" /> <br />
-      密码：<input type="password" /> <br />
-      性别：男<input type="radio" /> 女<input type="radio" />
+      <label for="text">用户名：</label
+      ><input
+        type="text"
+        name="username"
+        value="请输入用户名"
+        maxlength="6"
+        id="text"
+      />
+      <br />
+      密码：<input type="password" name="psw" /> <br />
+      性别：<label for="nan">男</label
+      ><input type="radio" name="gender" value="男" id="nan" /> 女<input
+        type="radio"
+        name="gender"
+        value="女"
+      /><br />
+      爱好：吃饭<input type="checkbox" name="hobby" value="吃饭" />睡觉<input
+        type="checkbox"
+        name="hobby"
+        value="睡觉"
+      />打豆豆<input
+        type="checkbox"
+        name="hobby"
+        value="打豆豆"
+        checked="checked"
+      /><br />
+      <input type="submit" value="免费注册" />
+      <input type="reset" value="重新来过" />
+      <input type="button" value="获取验证码" /><br />
+      上传头像<input type="file" /><br />
+      籍贯
+      <select>
+        <option>土星</option>
+        <option>火星</option>
+        <option selected="selected">地球</option></select
+      ><br />
+      留言
+      <textarea cols="50" rows="5">我有话说</textarea>
     </form>
   </body>
 </html>
