@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 后代选择器 ：元素一 元素二 {样式声明}*/
+      ol li {
+        color: pink;
+      }
+      ol li a {
+        color: red;
+      }
+      /* 子元素选择器：只会选择亲儿子 */
+      .nav > a {
+        color: brown;
+      }
+      /* 并集选择器:用英文的逗号分隔 */
+      div,
+      p,
+      .pig li {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 后代选择器 -->
+    <ol>
+      <li>我是OL的孩子</li>
+      <li>我是OL的孩子</li>
+      <li><a href="#">我是孙子</a></li>
+    </ol>
+    <ul>
+      <li>我是UL的孩子</li>
+      <li>我是UL的孩子</li>
+      <li>我是UL的孩子</li>
+    </ul>
+    <!-- 子元素选择器 -->
+    <div class="nav">
+      <a href="#">我是女儿</a>
+      <p>
+        <a href="#">我是孙女</a>
+      </p>
+    </div>
+    <!-- 并集选择器 -->
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+      <li>佩奇</li>
+      <li>乔治</li>
+    </ul>
+  </body>
+</html>
