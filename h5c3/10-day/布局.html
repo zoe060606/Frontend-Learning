@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        /* width: 200px;
+        height: 200px; */
+        background-color: pink;
+      }
+      input {
+        width: 249px;
+        height: 35px;
+      }
+      a {
+        width: 249px;
+        height: 35px;
+        background-color: beige;
+        display: block; /*行元素转换成块元素*/
+      }
+      div {
+        width: 249px; /*没反应*/
+        display: inline;
+        background-color: aqua;
+      }
+      span {
+        display: inline-block; /*行内转行内块元素*/
+      }
+    </style>
+  </head>
+  <body>
+    <div>块元素</div>
+    上不去<br />
+    <span>行内元素</span><span>22</span> <br />
+    <!-- 行内快元素 -->
+    <input type="text" />
+    <input type="text" />
+    <a href="#">856</a>
+    <div>我是将要被转换成行元素的块元素</div>
+    <span>行内元素将要被转换成行内块元素</span>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 按照LVHA的顺序写 */
+      a:link {
+        color: #333;
+        text-decoration: none;
+      }
+      a:visited {
+        color: aqua;
+      }
+      a:hover {
+        color: orange;
+      }
+      a:active {
+        color: green;
+      }
+      /* focus伪选择器 */
+      input:focus {
+        background-color: yellow;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 链接伪类选择器 -->
+    <a href="#">小猪佩奇</a>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+  </body>
+</html>
