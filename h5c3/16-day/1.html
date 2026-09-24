@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 100px auto;
+      }
+      /* 鼠标经过展示阴影 */
+      div:hover {
+        /* 盒子的阴影 */
+        /* box-shadow:水平阴影位置（必需） 垂直阴影位置（必需） 模糊距离 阴影的尺寸 阴影的颜色 */
+        box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.3)
+          /*最后加上inset，变成内阴影*/;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
