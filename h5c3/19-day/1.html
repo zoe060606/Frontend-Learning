@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .clearfix::after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+      } */
+      /* 方法二 */
+      /* .clearfix:before,
+      .clearfix:after {
+        content: "";
+        display: table;
+      }
+      .clearfix:after {
+        clear: both;
+      } */
+      /* 用clear都要写这个，照顾低版本浏览器 */
+      /* .clearfix {
+        zoom: 1;
+      } */
+      .box {
+        /* 父元素清除浮动 */
+        /* overflow: hidden; */
+        width: 800px;
+        border: 1px solid blue;
+        margin: 0 auto;
+      }
+      .damao {
+        float: left;
+        width: 300px;
+        height: 200px;
+        background-color: purple;
+      }
+      .ermao {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+      .footer {
+        height: 200px;
+        background-color: black;
+      }
+      /* 隔墙法 */
+      /* .clear {
+        clear: both;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- 
+    <div class="box clearfix">
+     -->
+    <div class="box clearfix">
+      <div class="damao">1</div>
+      <div class="ermao">2</div>
+      <!-- <div class="clear"></div> -->
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>
