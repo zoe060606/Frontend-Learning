@@ -12,3 +12,36 @@ height: 42px;
 background-color: aquamarine;
 margin: 30px auto
 }
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+    background-color: blue;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+.nav ul li {
+     float: left;
+     margin:0 15px;
+}
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding:0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+    text-decoration: none;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
