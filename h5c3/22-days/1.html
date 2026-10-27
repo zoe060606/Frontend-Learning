@@ -5,12 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      /* 
+      以最近一级的父元素有定位的为准 ，
+      父元素没有定位，但是祖父元素有定位，
+      子元素以祖父元素的定位为准，
+      要是都没有就以浏览器为准
+       */
+      .yeye {
+        position: relative;
+        width: 800px;
+        height: 800px;
+        background-color: hotpink;
+        padding: 50px;
+      }
+      .father {
+        /* position: relative; */
+        width: 500px;
+        height: 500px;
+        background-color: skyblue;
+      }
       .son {
         position: absolute;
+        left: 30px;
+        bottom: 10px;
+        width: 200px;
+        width: 200px;
+        height: 200px;
+        background-color: pink;
       }
     </style>
   </head>
   <body>
-    <div class="son"></div>
+    <div class="yeye">
+      <div class="father">
+        <div class="son"></div>
+      </div>
+    </div>
   </body>
 </html>
