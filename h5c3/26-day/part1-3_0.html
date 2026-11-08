@@ -6,6 +6,21 @@
     <title>1-3_0</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      let str = "Hello";
+      let str2 = "Single";
+      let str3 = `can embed another ${str}`;
+      // 反引号是 功能扩展 引号。
+      // 它们允许我们通过将变量和表达式包装在 ${…} 中，
+      // 来将它们嵌入到字符串中
+      alert(`say,${str}`);
+      alert(`the result is ${1 + 2}`);
+      // 布尔值可以作为比较的结果
+      let isGreater = 4 > 1;
+      alert(isGreater);
+      // 如果一个变量已被声明，但未被赋值，那么它的值就是 undefined
+      let age;
+      alert(age);
+    </script>
   </body>
 </html>
