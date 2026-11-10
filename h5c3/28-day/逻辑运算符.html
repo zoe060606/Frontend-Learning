@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>逻辑运算符</title>
+  </head>
+  <body>
+    <script>
+      // 获取变量列表或表达式中的第一个真值
+      let firstName = "";
+      let lastName = "";
+      let nickName = "SuperCoder";
+      alert(firstName || lastName || nickName || Anonymous);
+      // 短路求值：只在左侧的条件为假时才执行命令
+      true || alert("not printed");
+      false || alert("printed");
+      // &&(与)，全真返回最后一个值，否则返回第一个假值
+      // ---？？
+      let height = 0;
+      // 返回100，第一个真值
+      alert(height || 100);
+      // 返回0，height是defined，被返回
+      alert(height ?? 100);
+    </script>
+  </body>
+</html>
