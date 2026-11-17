@@ -14,3 +14,14 @@ function showCancel() {
 
 // 用法：函数 showOk 和 showCancel 被作为参数传入到 ask
 ask("Do you agree?", showOk, showCancel);
+//---
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
