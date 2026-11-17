@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>对象</title>
+  </head>
+  <body>
+    <script>
+      let user = { name: "John" };
+      let admin = user;
+      admin.name = "Pete";
+      alert(user.name);
+      // ---
+      let a = {};
+      let b = a;
+      alert(a == b);
+      alert(a === b);
+      // ---
+      let user2 = {
+        name: "John",
+        age: 30,
+      };
+      let clone = {};
+      for (let key in user2) {
+        clone[key] = user2[key];
+      }
+      clone.name = "Pete";
+      alert(user2.name);
+      // 深层克隆---
+      let user3 = {
+        name: "John",
+        sizes: {
+          height: 170,
+          width: 50,
+        },
+      };
+      let clone = Object.assign({}, user);
+      alert(user.sizes === clone.size);
+      user.sizes.width++;
+      alert(clone.sizes.width);
+    </script>
+  </body>
+</html>

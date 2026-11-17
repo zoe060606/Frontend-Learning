@@ -3,43 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fuction</title>
+    <title>Function</title>
   </head>
   <body>
     <script>
-      //函数的主要目的之一：避免代码重复。
-      function showMessage() {
-        let message = "Hello world";
-        alert(message);
+      function ask(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
       }
-      showMessage();
-      showMessage();
-      // 局部变量---
-      // alert(message); //局部变量无法在外部调用
-      // 外部变量---
-      let userName = "Amy";
-      function showName() {
-        let names = "Good job " + userName;
-        alert(names);
+
+      function showOk() {
+        alert("You agreed.");
       }
-      showName();
-      //如果在函数内部声明了同名变量，那么函数会遮蔽外部变量
-      let userPassword = "123";
-      function showPassword() {
-        let userPassword = "456";
-        let compeletPassword = "密码是:" + userPassword;
-        alert(compeletPassword);
+
+      function showCancel() {
+        alert("You canceled the execution.");
       }
-      showPassword();
-      alert(userPassword);
-      // 参数---
-      function showMessage2(from, text) {
-        from = "*" + from + "*";
-        alert(from + ":" + text);
+
+      // 用法：函数 showOk 和 showCancel 被作为参数传入到 ask
+      ask("Do you agree?", showOk, showCancel);
+      //---
+      function ask(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
       }
-      let from = "Amy";
-      showMessage2(from, "Hello");
-      alert(from);
+
+      ask(
+        "Do you agree?",
+        function () {
+          alert("You agreed.");
+        },
+        function () {
+          alert("You canceled the execution.");
+        },
+      );
     </script>
   </body>
 </html>
