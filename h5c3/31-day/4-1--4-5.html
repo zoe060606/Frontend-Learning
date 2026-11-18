@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user = { name: "John" };
+      let admin = { name: "Admin" };
+      function sayHi() {
+        alert(this.name);
+      }
+      user.f = sayHi;
+      admin.f = sayHi;
+      user.f();
+      admin.f();
+      admin["f"]();
+      // ---
+      let user2 = {
+        firstName: "Ilya",
+        sayHii() {
+          let arrow = () => alert(this.firstName);
+          arrow();
+        },
+      };
+      user2.sayHii();
+      // ---
+      // 构造函数只能以大写字母开头，只能由new操作符执行
+      function User(name3) {
+        this.name3 = name3;
+        this.isAdmin = false;
+      }
+      let user3 = new User("Jack");
+      alert(user3.name3);
+      alert(user3.isAdmin);
+    </script>
+  </body>
+</html>
