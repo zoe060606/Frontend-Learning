@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let john = {
+        name: "John",
+        sayHi: function () {
+          alert("hi girl");
+        },
+      };
+
+      john.sayHi();
+      // 原始类型可以提供方法但仍是轻量级
+      let str = "Hello";
+      alert(str.toUpperCase());
+      //---
+      let n = 1.2366;
+      alert(n.toFixed(2));
+      //---
+      //let mcs = 1e-6; // 1 的左边有 6 个 0
+      //let billion = 1e9;  // 10 亿，字面意思：数字 1 后面跟 9 个 0
+      // ---
+      let num = 255;
+      alert(num.toString(16));
+      alert(num.toString(2));
+      // 将数字舍入到小数点后n位，并以字符串形式返回
+      let num2 = 12.34;
+      alert(num2.toFixed(1));
+      //只返回数字不带单位---
+      alert(paraseInt("100px"));
+    </script>
+  </body>
+</html>
