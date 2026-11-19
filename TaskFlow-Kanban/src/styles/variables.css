@@ -1,0 +1,23 @@
+:root {
+  /* 背景与面板颜色 */
+  --color-bg-main: #000000;
+  --color-bg-column: #161616;
+
+  /* 任务优先级色彩 */
+  --color-high: #d13e3e;    /* 对应之前的 red */
+  --color-medium: #bc3495;  /* 对应之前的 purple */
+  --color-low: #4a86e8;     /* 对应之前的 blue */
+  --color-success: #27ae60; /* 对应之前的 green */
+
+  /* 文字颜色 */
+  --text-main: #ffffff;
+  --text-sub: rgba(255, 255, 255, 0.7);
+
+  /* 间距变量 */
+  --spacing-gap: 20px;
+  --spacing-padding: 16px;
+
+  /* 圆角 */
+  --radius-column: 16px;
+  --radius-card: 12px;
+}

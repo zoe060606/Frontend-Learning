@@ -1,0 +1,25 @@
+/* src/styles/kanban.css */
+
+.custom-card {
+  border: none !important;
+  border-radius: var(--radius-card) !important;
+  margin-bottom: var(--spacing-padding);
+  color: var(--text-main) !important;
+}
+
+/* 优先级与变量的映射 */
+.priority-high {
+  background-color: var(--color-high) !important;
+}
+
+.priority-medium {
+  background-color: var(--color-medium) !important;
+}
+
+.priority-low {
+  background-color: var(--color-low) !important;
+}
+
+.priority-done {
+  background-color: var(--color-success) !important;
+}

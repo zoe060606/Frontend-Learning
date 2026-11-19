@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-main);
+  color: var(--text-white);
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+#app {
+  width: 100%;
+}
