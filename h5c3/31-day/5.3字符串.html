@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>字符串</title>
+  </head>
+  <body>
+    <script>
+      //单引号和双引号基本相同。但是，反引号允许我们通过 ${…} 将任何表达式嵌入到字符串中
+      function sum(a, b) {
+        return a + b;
+      }
+      alert(`1+2=${sum(1, 2)}`);
+      // 反引号允许字符串跨行传递
+      let guestList = `Guests:
+      * John
+      *Pete
+      *Mary`;
+      alert(guestList);
+      // 效果一样
+      //let guestList = "Guests:\n * John\n * Pete\n * Mary";
+      //alert(guestList);
+      // ---
+      let str = `Hello`;
+      alert(str[0]);
+      alert(str.charAt(0));
+      alert(str[str.length - 1]);
+      // 查找子字符串
+      let str2 = "Widget with id";
+      alert(str.indexOf("Widget"));
+      alert(str.indexOf("widget"));
+      alert(str.indexOf("id"));
+      // ---
+      let str3 = "Widget with id";
+      alert(str.indexOf("id", 2));
+    </script>
+  </body>
+</html>
